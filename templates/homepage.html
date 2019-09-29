@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+    {% block token %}
+        <script>{{ debug }}</script>
+    {% endblock %}
+    {% block content %}
+        <div class="h3 text-center">Verb: {{ question.word }}</div>
+        <div class="h3 text-center">{{ question.tense }}: {{ question.subject }}</div>
+        <div class="h3 text-center">{{ question.answer }}</div>
+
+    {% endblock %}
